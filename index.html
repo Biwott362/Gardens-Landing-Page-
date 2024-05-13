@@ -6,8 +6,239 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Mono&family=Roboto&family=Source+Code+Pro:ital,wght@1,600&display=swap" crossorigin>
     <link href="https://f" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css"/>
+    
     <title>Gardens Landing Page</title>
+    <style>
+body{
+    background-color:#d0f0c0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.gardens-app{
+    max-width:1000px;
+    margin:60px auto;
+    border-radius: 10px;
+}
+
+
+.first{
+    
+    box-shadow: 0px 30px 50px #d0d0d0;
+    width: 100%;
+    height:100vh;
+    background: linear-gradient(to right, white 70%, #d0f0c0 30%);
+}
+nav ul{
+    float: right;
+    margin-right: 2em;
+  }
+  
+  nav li{
+    display: inline;
+    padding: 1em;
+    display: inline-block;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #355e3b;
+  }
+ 
+
+.About{
+    padding:155px 40px;
+}
+.headline{ 
+    margin-top:40px;
+    line-height: 20px;
+    font-size: 50px;
+    color:#355e3b;
+}
+.Home{
+    color:#916a2f;
+}
+.details{
+    color:#013220;
+    font-size: 16px;
+    
+    line-height: 24px;
+    font-weight: 300;
+}
+.Learn{
+    background:#916a2f;
+    padding:15px 30px;
+    border:none;
+    font-size:16px;
+    margin-left:5px;
+    border-radius:15px;
+    color:white;
+    cursor:pointer;
+  }
+.home-img{
+    position:absolute;
+   top:25%;
+    left: 55%;
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    border:10px solid #355e3b;
+}
+.second{
+    width:100%;
+    height:100vh;
+    background: #355e3b;
+}
+.cover{
+    width:900px;
+    height:400px;
+    padding-top: 50px;
+    display:flex;
+}
+.box{
+    margin:15px;
+    width:300px;
+    height:400px;
+}
+img{ 
+    width:300px;
+    height:250px;
+}
+h2{
+    color:#cd7f32 ;
+    font-weight: 200;
+    font-size:30px;
+}
+.plants-details{
+    color:#d0d0d0;
+}
+.plants-button{
+    background:#355e3b;
+    padding:10px 20px;
+    border:1px solid ;
+    font-size:16px;
+    display:block;
+    margin:0 auto;
+    border-radius:15px;
+    color:white;
+    cursor:pointer;
+}
+.third{
+    background:white;
+    width:100%;
+    height:140vh;
+    padding-top:40px;
+}
+.care-of-plants{
+    position:relative;
+    padding: 25px;
+    
+}
+.care{
+    color:#355e3b;
+}
+.third p{
+     font-size:15px;
+}
+.plants-button1{
+    background: whitesmoke;
+    padding:10px 20px;
+    margin-top: 30px;
+    border:1px solid ;
+    font-size:10px;
+    display:block;
+    margin-left:5px;
+    border-radius:15px;
+    color:#916a2f;
+    cursor:pointer;
+}
+.third img{
+float:right;
+padding-right:80px;
+padding-top:25px;
+}
+.facts-headline{
+    padding-top: 120px;
+    text-align: center;
+    color: #355e3b;
+    font-size:large;
+}
+.facts{
+        padding-top: 1px;
+        display:flex;
+        width:10px;
+        height:400px;
+}
+.box-plants{
+    margin:35px;
+}
+.box-plants img{
+    width:200px;
+    height:200px;
+    
+}
+.facts h2{
+    font-size: 20px;
+}
+.facts a{
+    font-size:12px;
+    color:#013220;
+    cursor: pointer;
+}
+.fourth{
+    width:100%;
+    height:50vh;
+    background: linear-gradient(to right,  #8de29a 42%,#d0f0c0 95%);
+    box-shadow: 0px 30px 50px #d0d0d0;
+}
+.footer{
+   display:flex;
+   justify-content: space-around;
+   flex-wrap:wrap;
+   flex-direction: row;
+}
+.single-footer{
+    width:290px;
+}
+.single-footer h4{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:#355e3b;
+}
+.single-footer ul{
+    list-style:none;
+}
+.single-footer ul li{
+    margin-bottom: 10px;
+    position:relative;
+
+}
+.single-footer ul li a {
+    color:#013220;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.email{
+    background-color: aliceblue;
+    border:none;
+    border-radius: 8px;
+    width:50%;
+    padding:16px 20px;
+}
+.submit{
+    background:#355e3b;
+   padding:15px 10px;
+    border:none;
+    font-size:16px;
+    border-radius:6px;
+    color:white;
+}
+.coder{
+    text-align: center;
+}
+    </style>
 </head>
 <body>
     <div class="gardens-app">
@@ -122,7 +353,16 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/524/origina
     
 </footer>
    </div>  
-   <script src="script.js"></script>
+   <script>
+    let form = document.querySelector("#form");
+
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+    let email = document.querySelector("#email").value;
+    alert (`Thanks ${email} we'll be in touch!`);
+
+})
+   </script>
   <div class="coder">Coded by <a href="https://github.com/Biwott362" target="_blank">Sharon</a> for the <a href="https://www.shecodes.io/challenges" target="_blank">SheCodes Challenge</a></div> 
 </body>
 </html>
