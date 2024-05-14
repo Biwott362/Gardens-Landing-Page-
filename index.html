@@ -87,7 +87,7 @@ nav ul{
 }
 .second{
     width:100%;
-    height:100vh;
+    height:110vh;
     background: #355e3b;
 }
 .cover{
@@ -102,8 +102,8 @@ nav ul{
     height:400px;
 }
 img{ 
-    width:300px;
-    height:250px;
+    width:250px;
+    height:200px;
 }
 h2{
     color:#cd7f32 ;
@@ -127,7 +127,7 @@ h2{
 .third{
     background:white;
     width:100%;
-    height:140vh;
+    height:130vh;
     padding-top:40px;
 }
 .care-of-plants{
@@ -259,7 +259,7 @@ padding-top:25px;
         <br/>
     This collection brings some greenery that is a great plus for your interior.
     </h2> 
-    <a href="https://www.gardenersworld.com/plants/plants-for-urban-gardens/">
+    <a href="https://www.gardenersworld.com/plants/plants-for-urban-gardens/" target="_blank">
     <button class="Learn" type="submit"> Learn More </button>
     </a>
     </div>
@@ -273,14 +273,14 @@ padding-top:25px;
             https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/447/original/1000110184.jpg?1714763557"/>
             <h2>Ficus</h2>
             <p class="plants-details">This is one of the most popular onimental house plants.It keeps a tree like shape and enjoys bright indirect or unfiltered light</p>
-            <button type="submit" class="plants-button">Add to Bag</button>
+            <button type="submit" class="plants-button" id="plants-button">Add to Bag</button>
         </div>
         <div class="box">
             <img src="
             https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/448/original/1000110186.jpg?1714763568"/>
             <h2>Peace Lily</h2>
             <p class="plants-details">The peace lily plant is well known for its air-purifying abilities as a houseplant; it's great at breaking down and neutralizing toxic gases like carbon monoxide.</p>
-            <button type="submit" class="plants-button">Add to Bag</button>
+            <button type="submit" class="plants-button" id="plants-button">Add to Bag</button>
         </div>
         <div class="box">
             <img  src="
@@ -288,7 +288,7 @@ padding-top:25px;
             https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/449/original/1000110192.jpg?1714763580"/>
             <h2>Chains Of Hearts</h2>
             <p class="plants-details">Maiden fern is a versatile foliage plant and is available in a variety of textures and sizes to suit the style of your room and add interest</p>
-            <button type="submit" class="plants-button">Add to Bag</button>
+            <button type="submit" class="plants-button" id="plants-button">Add to Bag</button>
         </div>
     </div>
  </section>
@@ -362,6 +362,15 @@ form.addEventListener('submit',function(event){
     alert (`Thanks ${email} we'll be in touch!`);
 
 })
+
+let plants = document.querySelector("#plants-button");
+
+plants.addEventListener('click',function(event){
+    event.preventDefault();
+    let name = prompt("What's your name?");
+    alert(`Thanks ${name} for adding to the bag.`);
+})
+
    </script>
   <div class="coder">Coded by <a href="https://github.com/Biwott362" target="_blank">Sharon</a> for the <a href="https://www.shecodes.io/challenges" target="_blank">SheCodes Challenge</a></div> 
 </body>
